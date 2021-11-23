@@ -260,8 +260,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9120da3ad1ba3c24596143e11d0e410a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 3872988955344736904, guid: 14cb28b4ca83b7945a4dfb19687a9a0e,
-    type: 3}
+  enemyPrefabs:
+  - {fileID: 3872988955344736904, guid: 14cb28b4ca83b7945a4dfb19687a9a0e, type: 3}
+  - {fileID: 1560854137744792340, guid: 79c032e8e7b2baf4f996c0ecc820beea, type: 3}
+  - {fileID: 956401826132118707, guid: db2a4444a8eb43847a1ce9ed737e2d56, type: 3}
   spawnPosition: {x: 0, y: 0, z: 25}
 --- !u!1 &425805626
 GameObject:
