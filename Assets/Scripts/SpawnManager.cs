@@ -5,23 +5,28 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
-    public Vector3 spawnPosition = new Vector3(0, 0, 25);
+    private Vector3 spawnPosition;
 
     private float xRange = 15f;
+    private float spawnZ = 25f;
+
+    private float startTime = 1f;
+    private float repeatRate = 1f;
+
     private int randomIndex;
+    private float randomX;
 
     void Start()
     {
-        InvokeRepeating("SpawnEnemy", 1, 1f);
+        InvokeRepeating("SpawnEnemy", startTime, repeatRate);
     }
 
     public Vector3 RandomPosition()
     {
-        float randomX = Random.Range(-xRange, xRange);
+        randomX = Random.Range(-xRange, xRange);
 
-        return new Vector3(randomX, 0, 25);
+        return new Vector3(randomX, 0, spawnZ);
     }
-
 
     public void SpawnEnemy()
     {

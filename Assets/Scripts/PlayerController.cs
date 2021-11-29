@@ -5,15 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private float horizontalInput;
-    public float speed = 20f;
-    public float xRange = 16;
+    private float speed = 20f;
+    private float xRange = 16;
 
     public GameObject bulletPrefab;
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {
